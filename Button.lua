@@ -1,3 +1,4 @@
+
 local ScreenGui = Instance.new("ScreenGui")
 local ImageButton = Instance.new("ImageButton")
 local UICorner = Instance.new("UICorner")
@@ -19,14 +20,13 @@ Stroke.Parent = ImageButton
 Stroke.Color = Color3.fromRGB(150, 0, 0)
 Stroke.Thickness = 1.5
 
-local function UpdatePosition()
+local function updatePosition()
     local screenSize = workspace.CurrentCamera.ViewportSize
-    ImageButton.Position = UDim2.new(0.5, 0, 0, -40)
-    ImageButton.AnchorPoint = Vector2.new(0.5, 0)
+    ImageButton.Position = UDim2.new(0, 10, 1, -50) -- ซ้ายล่าง
 end
 
-UpdatePosition()
-workspace.CurrentCamera:GetPropertyChangedSignal("ViewportSize"):Connect(UpdatePosition)
+updatePosition()
+workspace.CurrentCamera:GetPropertyChangedSignal("ViewportSize"):Connect(updatePosition)
 
 ImageButton.MouseButton1Down:Connect(function()
     game:GetService("CoreGui")["redz Library V5"].Hub.Visible = not game:GetService("CoreGui")["redz Library V5"].Hub.Visible
