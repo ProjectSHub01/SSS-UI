@@ -68,14 +68,15 @@ local redzlib = {
 			["Color Stroke"] = Color3.fromRGB(0, 0, 0),
 			["Color Theme"] = Color3.fromRGB(150, 0, 0),
 			["Color Text"] = Color3.fromRGB(255, 255, 255),
-			["Color Dark Text"] = Color3.fromRGB(255, 255, 255)
+			["Color Dark Text"] = Color3.fromRGB(255, 255, 255),
+			["Color Text Lable"] = Color3.fromRGB(200,0,0)
 		}
 	},
 	Info = {
 		Version = "1.1.0"
 	},
 	Save = {
-		UISize = {550, 400},
+		UISize = {550, 380},
 		TabSize = 160,
 		Theme = "SSS"
 	},
@@ -655,13 +656,13 @@ game:GetService("TweenService"):Create(uiStroke, TweenInfo.new(1, Enum.EasingSty
 	})
 	
 	local Title = InsertTheme(Create("TextLabel", TopBar, {
-		Position = UDim2.new(0, 15, 0.5),
+		Position = UDim2.new(0, 31, 0.55),
 		AnchorPoint = Vector2.new(0, 0.5),
 		AutomaticSize = "XY",
 		Text = WTitle,
 		TextXAlignment = "Left",
-		TextSize = 12,
-		TextColor3 = Theme["Color Text"],
+		TextSize = 15,
+		TextColor3 = Theme["Color Text Lable"],
 		BackgroundTransparency = 1,
 		Font = Enum.Font.GothamMedium,
 		Name = "Title"
@@ -1875,6 +1876,10 @@ game:GetService("TweenService"):Create(uiStroke, TweenInfo.new(1, Enum.EasingSty
 				BackgroundColor3 = Color3.fromRGB(50, 150, 50)
 			})Make("Corner", JoinButton, UDim.new(0, 5))
 			
+      local img = Instance.new("ImageLabel", game:GetService("CoreGui")["redz Library V5"].Hub.Components["Top Bar"])
+      img.Size = UDim2.new(0, 30, 0, 30)
+      img.Image = "rbxassetid://74099166547943"
+      img.BackgroundTransparency = 1
 			local ClickDelay
 			JoinButton.Activated:Connect(function()
 				setclipboard(Invite)
@@ -1906,3 +1911,4 @@ game:GetService("TweenService"):Create(uiStroke, TweenInfo.new(1, Enum.EasingSty
 	return Window
 end
 return redzlib
+
