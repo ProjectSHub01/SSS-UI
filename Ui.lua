@@ -776,17 +776,9 @@ game:GetService("TweenService"):Create(uiStroke, TweenInfo.new(1, Enum.EasingSty
 		Name = "Close"
 	})
 	
-	local MinimizeButton = SetProps(CloseButton:Clone(), {
-		Position = UDim2.new(1, -35, 0.5),
-		Image = "rbxassetid://10734896206",
-		Name = "Minimize"
-	})
-	
 	SetChildren(ButtonsFolder, {
 		CloseButton,
-		MinimizeButton
 	})
-	
 	local Minimized, SaveSize, WaitClick
 	local Window, FirstTab = {}, false
 	function Window:CloseBtn()
