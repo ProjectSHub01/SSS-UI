@@ -75,9 +75,9 @@ local redzlib = {
 		Version = "1.1.0"
 	},
 	Save = {
-		UISize = {550, 380},
+		UISize = {550, 400},
 		TabSize = 160,
-		Theme = "Rimuru"
+		Theme = "SSS"
 	},
 	Settings = {},
 	Connection = {},
