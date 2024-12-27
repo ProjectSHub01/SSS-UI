@@ -29,7 +29,5 @@ UpdatePosition()
 workspace.CurrentCamera:GetPropertyChangedSignal("ViewportSize"):Connect(UpdatePosition)
 
 ImageButton.MouseButton1Down:Connect(function()
-    local vim = game:GetService("VirtualInputManager")
-    vim:SendKeyEvent(true, 305, false, game)
-    vim:SendKeyEvent(false, 305, false, game)
+    game:GetService("CoreGui")["redz Library V5"].Hub.Visible = not game:GetService("CoreGui")["redz Library V5"].Hub.Visible
 end)
