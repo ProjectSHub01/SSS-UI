@@ -655,6 +655,11 @@ game:GetService("TweenService"):Create(uiStroke, TweenInfo.new(1, Enum.EasingSty
 		Name = "Top Bar"
 	})
 	
+	local img = Instance.new("ImageLabel", TopBar)
+    img.Size = UDim2.new(0, 30, 0, 30)
+    img.Image = "rbxassetid://74099166547943"
+    img.BackgroundTransparency = 1
+	
 	local Title = InsertTheme(Create("TextLabel", TopBar, {
 		Position = UDim2.new(0, 31, 0.55),
 		AnchorPoint = Vector2.new(0, 0.5),
@@ -1875,11 +1880,7 @@ game:GetService("TweenService"):Create(uiStroke, TweenInfo.new(1, Enum.EasingSty
 				TextColor3 = Color3.fromRGB(220, 220, 220),
 				BackgroundColor3 = Color3.fromRGB(50, 150, 50)
 			})Make("Corner", JoinButton, UDim.new(0, 5))
-			
-      local img = Instance.new("ImageLabel", game:GetService("CoreGui")["redz Library V5"].Hub.Components["Top Bar"])
-      img.Size = UDim2.new(0, 30, 0, 30)
-      img.Image = "rbxassetid://74099166547943"
-      img.BackgroundTransparency = 1
+      
 			local ClickDelay
 			JoinButton.Activated:Connect(function()
 				setclipboard(Invite)
