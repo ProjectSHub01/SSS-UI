@@ -50,10 +50,18 @@ local function lak(a)
 	end)
 end
 
-local HttpService = game:GetService("HttpService")
-local IconLink = "https://raw.githubusercontent.com/ProjectSHub01/SSS-UI/main/icons.json"
-local success, data = pcall(HttpService.GetAsync, HttpService, IconLink)
-local IconList = success and HttpService:JSONDecode(data) or nil
+local Http = game:GetService("HttpService")
+local url = "https://raw.githubusercontent.com/ProjectSHub01/SSS-UI/main/icons.json"
+
+local success, data = pcall(function() return Http:GetAsync(url) end)
+local IconList = {}
+
+if success then
+    local decoded, icons = pcall(function() return Http:JSONDecode(data) end)
+    if decoded then
+        IconList = icons
+    end
+end
 
 local Excusyz = Instance.new("ScreenGui")
 
