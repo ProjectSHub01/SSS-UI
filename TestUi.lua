@@ -873,14 +873,14 @@ local IconList = {
 
 local Excusyz = Instance.new("ScreenGui")
 
-Excusyz.Name = "Excusyz"
+Excusyz.Name = "SSSEditUi"
 Excusyz.IgnoreGuiInset = true
-Excusyz.Parent = game.Players.LocalPlayer.PlayerGui
+Excusyz.Parent = game.CoreGui
 
 function Library:CreateWindow(info)
 	
 	local NameHub = info.Name or info.name or info.Title or info.title or "Excusyz"
-	local Icon = info.Icon or info.icon or 122610081600422
+	local Icon = info.Icon or info.icon or 86913874100548
 	
 	local Background_1 = Instance.new("Frame")
 	local UICorner_1 = Instance.new("UICorner")
