@@ -892,7 +892,7 @@ function Library:CreateWindow(info)
 	Background_1.Name = "Background"
 	Background_1.Parent = Excusyz
 	Background_1.AnchorPoint = Vector2.new(0.5, 0.5)
-	Background_1.BackgroundColor3 = Color3.fromRGB(24,24,24)
+	Background_1.BackgroundColor3 = Color3.fromRGB(0,0,0)
 	Background_1.BorderColor3 = Color3.fromRGB(0,0,0)
 	Background_1.BorderSizePixel = 0
 	Background_1.Position = UDim2.new(0.5, 0,0.5, 0)
@@ -1069,7 +1069,7 @@ function Library:CreateWindow(info)
 			t = 0.3,
 			s = "Linear",
 			d = "Out",
-			g = {Size = UDim2.new(0, 400,0, 300)}
+			g = {Size = UDim2.new(0, 500,0, 350)}
 		}):Play()
 	end)
 	
