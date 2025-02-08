@@ -1189,7 +1189,7 @@ function Library:CreateWindow(info)
 	Tablist_1.BackgroundTransparency = 1
 	Tablist_1.BorderColor3 = Color3.fromRGB(0,0,0)
 	Tablist_1.BorderSizePixel = 0
-	Tablist_1.Position = UDim2.new(0.970000029, 0,0.0799999982, 0)
+	Tablist_1.Position = UDim2.new(0.80, 0,0.0799999982, 0)
 	Tablist_1.Size = UDim2.new(0, 182,0, 45)
 
 	ScrollingFrame_1.Name = "ScrollingFrame"
@@ -1336,7 +1336,7 @@ function Library:CreateWindow(info)
 		Page_1.BackgroundTransparency = 1
 		Page_1.BorderColor3 = Color3.fromRGB(0,0,0)
 		Page_1.BorderSizePixel = 0
-		Page_1.Position = UDim2.new(-2, 0,0.5, 0)
+		Page_1.Position = UDim2.new(-2, 0,0.57, 0)
 		Page_1.Size = UDim2.new(0.949999988, 0,0, 225)
 		Page_1.Visible = false
 
@@ -1435,7 +1435,7 @@ function Library:CreateWindow(info)
 			for i,v in pairs(Background_1:GetChildren()) do
 				if v.Name == "Page" then
 					v.Visible = false
-					v.Position = UDim2.new(-2, 0,0.569999993, 0)
+					v.Position = UDim2.new(-2, 0,0.5, 0)
 				end
 			end
 			Tw({
@@ -1465,7 +1465,7 @@ function Library:CreateWindow(info)
 				t = 0.3,
 				s = "Linear",
 				d = "Out",
-				g = {Position = UDim2.new(0.5, 0,0.569999993, 0)}
+				g = {Position = UDim2.new(0.5, 0,0.5, 0)}
 			}):Play()
 		end)
 		
@@ -1498,7 +1498,7 @@ function Library:CreateWindow(info)
 					t = 0.3,
 					s = "Linear",
 					d = "Out",
-					g = {Position = UDim2.new(0.5, 0,0.569999993, 0)}
+					g = {Position = UDim2.new(0.5, 0,0.5, 0)}
 				}):Play()
 				Library.Tab.Value = true
 			end
