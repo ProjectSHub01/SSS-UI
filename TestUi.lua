@@ -1069,7 +1069,7 @@ function Library:CreateWindow(info)
 			t = 0.3,
 			s = "Linear",
 			d = "Out",
-			g = {Size = UDim2.new(0, 500,0, 350)}
+			g = {Size = UDim2.new(0, 500,0, 400)}
 		}):Play()
 	end)
 	
@@ -1121,7 +1121,7 @@ function Library:CreateWindow(info)
 				t = 0.15,
 				s = "Linear",
 				d = "Out",
-				g = {Size = UDim2.new(0, 500,0, 350)}
+				g = {Size = UDim2.new(0, 500,0, 400)}
 			}):Play()
 			Tw({
 				v = CloseUI,
@@ -3136,3 +3136,5 @@ function Library:CreateWindow(info)
 
 	return Library.Tab
 end
+
+
