@@ -873,13 +873,13 @@ local IconList = {
 
 local Excusyz = Instance.new("ScreenGui")
 
-Excusyz.Name = "SSSEditUi"
+Excusyz.Name = "SSSUi Edit"
 Excusyz.IgnoreGuiInset = true
 Excusyz.Parent = game.CoreGui
 
 function Library:CreateWindow(info)
 	
-	local NameHub = info.Name or info.name or info.Title or info.title or "Excusyz"
+	local NameHub = info.Name or info.name or info.Title or info.title or "SSS"
 	local Icon = info.Icon or info.icon or 86913874100548
 	
 	local Background_1 = Instance.new("Frame")
@@ -1121,7 +1121,7 @@ function Library:CreateWindow(info)
 				t = 0.15,
 				s = "Linear",
 				d = "Out",
-				g = {Size = UDim2.new(0, 400,0, 300)}
+				g = {Size = UDim2.new(0, 500,0, 350)}
 			}):Play()
 			Tw({
 				v = CloseUI,
@@ -1336,7 +1336,7 @@ function Library:CreateWindow(info)
 		Page_1.BackgroundTransparency = 1
 		Page_1.BorderColor3 = Color3.fromRGB(0,0,0)
 		Page_1.BorderSizePixel = 0
-		Page_1.Position = UDim2.new(-2, 0,0.569999993, 0)
+		Page_1.Position = UDim2.new(-2, 0,0.5, 0)
 		Page_1.Size = UDim2.new(0.949999988, 0,0, 225)
 		Page_1.Visible = false
 
